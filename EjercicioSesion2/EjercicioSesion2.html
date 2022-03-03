@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Sesión 2</title>
+</head>
+<body style="color: #1b4f72;">
+  <!--
+  Como segunda parte del ejercicio deberás crear una tabla, esta tabla tendrá 4 columnas y 4 filas, 
+  en esta tabla deberás hacer que:
+        Una de las celdas ocupe dos columnas.
+        Una de las celdas ocupe dos filas.-->
+    <form id="form1" style="border: 5px #2980b9 solid; border-radius: 15px; margin: 100px; padding: 30px; 
+    background-color: #a9cce3;">
+        <h2>Formulario Ejercicio 2</h2>
+        <fieldset>
+            <legend>Por favor, completa el formulario.</legend>
+            <div>
+                <label>Nombre:</label><br>
+                <input id="form1_name" name="name" pattern="[A-Za-z]+" required type="text" 
+                placeholder="Ingresa tu nombre"/><br>
+                <label>Apellido:</label><br>
+                <input id="form1_surname" name="surname" pattern="[A-Za-z]+" required type="text" 
+                placeholder="Ingresa tu apellido"/><br>
+                <label>E-mail:</label><br>
+                <input id="form1_mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                required type="email" placeholder="Ingresa tu e-mail"/><br>
+                <label>N° de teléfono:</label><br>
+                <input id="form1_phone" name="phone" pattern="[0-9+#]{8,}" required type="tel" 
+                placeholder="Ingresa tu N° de teléfono"/><br>
+                <label>Dirección:</label><br>
+                <input id="form1_street" name="street" pattern="[A-Za-z]+" required type="text" 
+                placeholder="Calle"/><br>
+                <input id="form1_adnumber" name="adnumber" pattern="[0-9]+" required type="text" 
+                placeholder="Número"/><br>
+                <input id="form1_submit" style="margin: 10px;" type="submit"/>
+            </div>
+        </fieldset>
+    </form>
+    <table style="margin: auto;" border="1px">
+        <caption>Tabla Ejercicio Sesión 2</caption>
+        <thead>
+            <tr>
+              <th>XXXX</th>
+              <th>Columna 1</th>
+              <th>Columna 2</th>
+              <th>Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Fila 1</th>
+                <td rowspan="2" style="text-align: center;">1,1<br>2,1</td>
+                <td style="text-align: center;">(1,2)</td>
+                <td style="text-align: center;">(1,3)</td>
+            </tr>
+            <tr>
+                <th>Fila 2</th>
+                <td style="text-align: center;">(2,2)</td>
+                <td style="text-align: center;">(2,3)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Fila 3</th>
+                <td style="text-align: center;">(3,1)</td>
+                <td colspan="2" style="text-align: center;">(3,2)->(3,3)</td>
+            </tr>
+          </tfoot>
+    </table>
+</body>
+</html>
