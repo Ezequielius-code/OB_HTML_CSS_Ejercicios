@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    top: 250px;
+    left: 175px;
+    overflow: hidden;
+}
+
+.gallery {
+    background-color: rgb(193, 39, 45);
+    width: 600px;
+    height: 380px;
+    margin: 2px;
+    border: 5px solid rgb(253, 185, 19);
+    position: relative;
+    float: left;
+}
+
+.gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gallery input[type=radio] {
+    position: relative;
+    top: 360px;
+    margin-left: 20px;
+}
+
+.gallery input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+opacity: 1;
+}
+
+.gallery input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+opacity: 1;
+}
+
+.gallery input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+opacity: 1;
+}
+
+.gallery input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+opacity: 1;
+}
+
+.title_container {
+    width: 600px;
+    height: 380px;
+    margin-left: 250px;
+    float: left;
+}
+
+#title {
+    font-size: 75px;
+    font-weight: bolder;
+    text-align: left;
+    line-height: 100px;
+    color: rgb(0, 106, 68);
+}
+
+#first_syllabe {
+    color: rgb(253, 185, 19);
+}
+
+#second_syllabe {
+    color: rgb(193, 39, 45);
+}
+
+.info {
+    position: fixed;
+    bottom: 0;
+    background: rgba(51, 51, 51, 0.7);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.links {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+#more_info {
+    width: 100px;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 100px;
+    border: 1px solid rgb(253, 185, 19);
+    background: rgb(0, 106, 68);
+    color: rgb(253, 185, 19);
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+
+#more_info:hover {
+    background: rgb(253, 185, 19);
+    color: rgb(0, 106, 68);
+    border: 1px solid rgb(0, 106, 68);
+}
